@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_attdados3"
+
+            style="@style/ButtonEntrar"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/black"
+            android:layout_width="197dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="88dp"
+            android:text="Aplicar"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents2"
+            style="@style/text_border"
+            android:layout_width="fill_parent"
+            android:layout_height="94dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents3"
+            style="@style/text_border"
+            android:layout_width="fill_parent"
+            android:layout_height="94dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents4"
+            style="@style/text_border"
+            android:layout_width="fill_parent"
+            android:layout_height="94dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents5"
+            style="@style/text_border"
+            android:layout_width="fill_parent"
+            android:layout_height="94dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents7"
+            style="@style/text_border"
+            android:layout_width="411dp"
+            android:layout_height="248dp"
+            app:layout_constraintBottom_toTopOf="@+id/error_message2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="62dp"
+            android:text="EDITAR PERFIL"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.244"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_nome"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="4dp"
+            android:drawableRight="@drawable/ic_profile"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Editar nome"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/containerComponents2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_senhaatual"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:drawableRight="@drawable/ic_password"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Senha Atual"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents7" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_senha2"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:drawableRight="@drawable/ic_password"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Confirmar Nova Senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_senha"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:drawableRight="@drawable/ic_password"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Nova Senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_senhaatual" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_CPF"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="6dp"
+            android:drawableRight="@drawable/ic_profile"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Editar CPF"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/containerComponents4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_phone"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="6dp"
+            android:drawableRight="@drawable/ic_phone_android"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Editar Telefone"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/containerComponents5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/edit_useremail"
+            android:layout_width="323dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="6dp"
+            android:drawableRight="@drawable/ic_email"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Editar email"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/containerComponents3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/button_voltar"
+            android:layout_width="48dp"
+            android:layout_height="39dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/login3"
+            android:layout_width="102dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/obra_prima"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:text="Nome:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents2" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:text="Email:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents3"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponents2" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="2dp"
+            android:text="CPF:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_CPF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents4"
+            app:layout_constraintVertical_bias="0.0" /><![CDATA[
+
+
+
+        app:layout_constraintTop_toTopOf="@+id/containerComponents2"
+            app:layout_constraintVertical_bias="0.01" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ]]>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="76dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="1dp"
+            android:text="Telefone:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_phone"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents5" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="278dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="1dp"
+            android:text="Nome"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="249dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:text="Telefone"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_phone"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents5"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="280dp"
+            android:layout_height="29dp"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents3"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponents2" />
+
+        <TextView
+            android:id="@+id/user_cpf"
+            android:layout_width="280dp"
+            android:layout_height="24dp"
+            android:text="CPF"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_CPF"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents3"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponents3" />
+
+        <TextView
+            android:id="@+id/error_message2"
+            android:layout_width="328dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_attdados3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

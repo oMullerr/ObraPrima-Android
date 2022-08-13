@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".FormCadastroProfissional">
+
+
+        <View
+            android:id="@+id/containerComponents"
+            android:layout_width="316dp"
+            android:layout_height="893dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            style="@style/Edit_Text"
+            android:id="@+id/editPersonName"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/ic_name"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_cadastro_profissional" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:drawableRight="@drawable/ic_money"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Preço a cobrar"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/createPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editBio"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/ic_email"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPersonName" />
+
+        <EditText
+            android:id="@+id/editTextCPF"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_cpf"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Digite seu CPF"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_phone_android"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCPF" />
+
+        <EditText
+            android:id="@+id/editBio"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_service"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/createPassword"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="76dp"
+            android:drawableRight="@drawable/ic_password"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Crie sua senha"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editBio" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            style="@style/Edit_Text"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_password_confirm"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Confirme sua senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createPassword" />
+
+        <TextView
+            android:id="@+id/title_cadastro_profissional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:text="@string/title_cadastro_profissional"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/login7"
+            android:layout_width="195dp"
+            android:layout_height="130dp"
+            android:src="@drawable/obra_prima"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/bt_cadastrar"
+            style="@style/ButtonEntrar"
+            android:layout_width="197dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="40dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="Cadastrar"
+            android:textSize="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/errorMessage2"
+            android:layout_width="295dp"
+            android:layout_height="29dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0505"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+            app:layout_constraintVertical_bias="0.923" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="224dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/errorMessage2"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="185dp"
+            android:layout_height="41dp"
+            android:padding="8dp"
+            android:text="Escolha seu ramo:"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

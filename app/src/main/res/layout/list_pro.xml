@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profissional"
+    style="@style/Pro_List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:maxLength="100"
+    android:text="TEXTO EXEMPLO"
+    android:drawableRight="@drawable/ic_next"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold" />

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".FormLogin">
+
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="238dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="7dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0505"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/login"
+            app:layout_constraintTop_toTopOf="@+id/login"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/login"
+            android:layout_width="411dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/obra_prima"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            />
+
+
+        <EditText
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/edit_email"
+            android:text=""
+            style="@style/Edit_Text"
+            android:drawableRight="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents"
+            />
+
+
+        <EditText
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/password"
+            android:text=""
+            style="@style/Edit_Text"
+            android:drawableRight="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            style="@style/ButtonEntrar"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/black"
+            android:id="@+id/bt_entrar"
+            android:text="@string/entrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+
+        <TextView
+            android:id="@+id/cadastro_profissional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_cadastro_profissional"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastro_cliente" />
+
+        <TextView
+            android:id="@+id/cadastro_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/text_cadastro_cliente"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

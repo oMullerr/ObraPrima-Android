@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".TelaPrincipalProfissional"
+        tools:ignore="ExtraText">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/bt_verpedidos2"
+            style="@style/ButtonEntrar"
+            android:layout_width="352dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="176dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="HISTÓRICO
+"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_deslogar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/bt_verpedidos"
+            style="@style/ButtonEntrar"
+            android:layout_width="352dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="76dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="MEUS SERVIÇOS"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_verpedidos2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/login5"
+            android:layout_width="102dp"
+            android:layout_height="87dp"
+            android:src="@drawable/obra_prima"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/containerProfile"
+            android:layout_width="147dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/container_profile"
+            app:layout_constraintBottom_toTopOf="@+id/textTituloPro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/containerIcon"
+            android:layout_width="146dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintBottom_toBottomOf="@+id/containerProfile"
+            app:layout_constraintEnd_toEndOf="@+id/containerProfile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/containerProfile"
+            app:layout_constraintTop_toTopOf="@+id/containerProfile"
+            app:layout_constraintVertical_bias="1.0"
+            app:tint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            style="@style/ButtonEntrar"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowRadius="1"
+            android:shadowColor="@color/black"
+            android:id="@+id/bt_deslogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp"
+            android:text="Deslogar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--             <TextView
+            android:id="@+id/textView3"
+            android:layout_width="241dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="7dp"
+            android:text="Realizou uma troca de canos.\n30/04"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+-->
+
+        <TextView
+            android:id="@+id/textTituloPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:text="Olá ------!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:flow_verticalAlign="center"
+            app:layout_constraintBottom_toTopOf="@+id/total_ganhos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/total_ganhos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:text="ganhos"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:flow_verticalAlign="center"
+            app:layout_constraintBottom_toTopOf="@+id/bt_verpedidos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
